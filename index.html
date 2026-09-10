@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Temperando Histórias: receitas, memórias e sabores que atravessam gerações." />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Temperando Histórias | Receitas com memória</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="menu" aria-label="Navegação principal">
+        <a class="logo" href="#inicio" aria-label="Voltar ao início">
+          <img src="img/logoTextoLado.png" alt="Temperando Histórias" />
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+          <span class="sr-only">Abrir menu</span>
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="site-navigation">
+          <li><a href="#receitas">Receitas</a></li>
+          <li><a href="#historias">Histórias</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+        </ul>
+
+        <button class="search-button" type="button" aria-label="Pesquisar receitas" aria-expanded="false" aria-controls="search-panel">
+          <img src="img/BarraPesquisa.png" alt="" />
+        </button>
+      </nav>
+      <div class="search-panel" id="search-panel" hidden>
+        <label for="recipe-search">Encontre uma receita</label>
+        <input id="recipe-search" type="search" placeholder="Ex.: baião, doce, almoço..." autocomplete="off" />
+        <span class="search-status" aria-live="polite"></span>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-content">
+          <span class="eyebrow">SABORES QUE CONTAM HISTÓRIAS</span>
+          <h1>Temperando<br /><em>Histórias.</em></h1>
+          <p>Receitas, memórias e sabores que atravessam gerações. Porque cada prato tem uma história esperando para ser contada.</p>
+          <a class="primary-button" href="#receitas">Explorar receitas <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-decoration" aria-hidden="true">
+          <div class="circle circle-one"></div><div class="circle circle-two"></div><span class="hero-word">SABOR</span>
+        </div>
+      </section>
+
+      <section class="intro" id="historias">
+        <div class="section-label">01 — NOSSA COZINHA</div>
+        <div class="intro-text">
+          <h2>Mais que comida.<br /><em>Uma memória.</em></h2>
+          <p>Na nossa cozinha, cada receita começa com uma lembrança: o almoço de domingo, o cheiro do café passado ou o caderno de receitas da família. Aqui, tradição e criatividade se encontram à mesa.</p>
+        </div>
+      </section>
+
+      <section class="recipes" id="receitas">
+        <div class="section-heading">
+          <div><span class="section-label">02 — RECEITAS</span><h2>Da nossa mesa<br /><em>para a sua.</em></h2></div>
+          <p>Escolha um prato, reúna quem você ama e deixe a cozinha contar o resto da história.</p>
+        </div>
+
+        <article class="recipe-feature recipe-item" data-search="baiao de dois arroz feijao queijo nordeste almoço">
+          <div class="recipe-image"><img src="img/baiaoDeDois.png" alt="Baião de dois servido em uma panela de barro" /><span class="recipe-tag">RECEITA DA CASA</span></div>
+          <div class="recipe-info">
+            <span class="recipe-number">01</span><h3>Baião de Dois</h3>
+            <p>Um clássico cheio de sabor, feito para reunir pessoas ao redor da mesa. Arroz, feijão, queijo e aquele tempero que transforma uma refeição em memória.</p>
+            <div class="recipe-meta"><span>⏱ 45 min</span><span>◉ Fácil</span><span>♨ 4 porções</span></div>
+            <a href="#receitas" class="text-button">Ver receita <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <div class="recipe-grid">
+          <article class="recipe-card recipe-item" data-search="bolo de milho café doce festa junina"><div class="card-placeholder"><span>02</span></div><div class="card-content"><span>CAFÉ DA TARDE</span><h3>Bolo de milho cremoso</h3><p>Textura macia, aroma de erva-doce e sabor de festa junina em cada fatia.</p></div></article>
+          <article class="recipe-card recipe-item" data-search="caldo verde sopa inverno batata couve jantar"><div class="card-placeholder"><span>03</span></div><div class="card-content"><span>CONFORTO EM UMA PANELA</span><h3>Caldo verde da família</h3><p>Uma sopa acolhedora para aquecer noites frias e conversas demoradas.</p></div></article>
+          <article class="recipe-card recipe-item" data-search="cocada coco sobremesa doce praia"><div class="card-placeholder"><span>04</span></div><div class="card-content"><span>DOCE LEMBRANÇA</span><h3>Cocada de colher</h3><p>Leite condensado, coco fresco e uma pausa doce para celebrar o dia.</p></div></article>
+        </div>
+        <p class="empty-state" hidden>Nenhuma receita encontrada. Tente outro ingrediente ou prato.</p>
+      </section>
+
+      <section class="quote-section"><div class="quote-mark" aria-hidden="true">“</div><blockquote>Uma receita é uma história que pode ser compartilhada.</blockquote><span>— UMA HISTÓRIA À MESA</span></section>
+
+      <section class="about" id="sobre">
+        <div class="about-title"><span class="section-label">03 — SOBRE NÓS</span><h2>Onde o sabor<br /><em>encontra a história.</em></h2></div>
+        <div class="about-copy"><p>Temperando Histórias nasceu para celebrar a cozinha afetiva e as pessoas que fazem dela um lugar de encontro.</p><p>Mais do que ensinar receitas, queremos preservar os pequenos rituais que dão gosto à vida: cozinhar sem pressa, dividir a mesa e passar adiante o que aprendemos.</p></div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="footer-logo"><img src="img/logoTextoLado.png" alt="Temperando Histórias" /></div><p>© 2026 Temperando Histórias</p><div class="footer-links"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a><a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a><a href="mailto:oi@temperandohistorias.com">Contato</a></div></footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
